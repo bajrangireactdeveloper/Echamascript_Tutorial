@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lexical Scope</title>
+</head>
+<body>
+
+
+    <script>
+
+        let data={
+            name_item: "Friends",
+            name : ['Jay ShreeRam','Shyam',"Radhe","Hello Baj"],
+            getFullDetasils(){
+                // console.log("Hello", this.name);
+                // let that = this.name_item;
+                // this.name.map(function(item){
+                //     console.log(that,item);
+                // })
+                this.name.map((item)=>{
+                    console.log(this.name_item,item)
+                })
+            }
+
+        }
+
+        data.getFullDetasils();
+    </script>
+    
+</body>
+</html>

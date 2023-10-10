@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inheritance</title>
+</head>
+<body>
+    
+
+
+    <script>
+
+        class Category{
+            dryFruits(){
+                return "Kaju"
+            }
+            dryFruitsType(){
+                return "Dry Fruits";
+            }
+        }
+
+        class Apple extends Category{
+            constructor(){
+                super();
+                console.log("hello Constructor");
+            }
+            setApplaName(){
+                return "you got Apple";
+            }
+        }
+
+        let f1 = new Apple;
+        // let c1 = new Category;
+        // console.log(f1.setApplaName());
+        console.log(f1.dryFruits());
+    </script>
+</body>
+</html>

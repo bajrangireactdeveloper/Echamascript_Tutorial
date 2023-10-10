@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find and Find Index Value</title>
+</head>
+<body>
+
+
+
+    <script>
+
+
+        // let arra = [10,20,50,7,1,100];
+
+        let arra = [
+                {id:10, name:"hello"},
+                {id: 20},
+                {id:50},
+                {id:7},
+                {id:1},
+                {id:100}
+
+        ]
+        // let result = arra.find(function(item){
+        //     return item<10;
+        // })
+
+        // let result = arra.findIndex(function(item){
+        //     return item>20;
+        // })
+
+        // let result = arra.find((item)=>item<50 && item<100)
+
+        // function Custom(item){
+        //     return item.id>50
+        // }
+
+    // let result = arra.find(Custom);
+    let result = arra.find(function(item){
+        return  item.id<20
+    })
+
+        console.log(result);
+
+    </script>
+    
+</body>
+</html>

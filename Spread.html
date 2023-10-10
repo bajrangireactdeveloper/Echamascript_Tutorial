@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spread oprator</title>
+</head>
+<body>
+
+
+    <script>
+
+        
+        //let newFruits = ["Banana","Kiwi"];
+        let fruits = ["Apple","papaya","orange"];
+
+    //     function PrintAll(a,b,c){
+    //         console.log(a,b,c)
+    //     }
+
+    //    PrintAll(fruits[0],fruits[1],fruits[2]);
+    //     PrintAll(...fruits)
+
+
+        function PrintAll(...a){
+            console.log(a)
+        }
+
+        // PrintAll(fruits[0],fruits[1],fruits[2]);
+        //PrintAll(...fruits)
+        // let AllArrayCollect = [...fruits , ...newFruits];
+        //PrintAll(AllArrayCollect)
+
+        // let newFruitsCopayArray = fruits; 
+        let newFruitsCopayArray = [...fruits]; 
+        newFruitsCopayArray.push("Test"); //done array add element and how Resolve 
+
+        PrintAll(newFruitsCopayArray)
+        PrintAll(fruits)
+        
+
+
+    </script>
+    
+</body>
+</html>

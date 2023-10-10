@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function</title>
+</head>
+<body>
+
+
+
+    <script>
+
+    //     function test1(){
+    //         return 1;
+
+    //     }
+
+    //  let test2 = function(){
+    //     return 1
+
+    //  }
+
+    // let data = [10,20,30,40,50,60,70];
+
+
+    // let  newData = data.map(function(item){
+    //     return item*2
+    // })
+
+    // arrya multply very digi*2
+    // let newData = data.map((item)=>item*2)
+    //  let test3 = () =>{
+    //     return 1
+    //  }
+
+    //  console.log(test1())
+
+    // console.log(newData)
+
+
+    let item={
+        name: "Ram",
+        fullName:function(){
+            console.log(this)
+        },
+        fullNameDetails: () =>{
+            console.log(this)
+        }
+    }
+
+
+    item.fullName();
+    item.fullNameDetails();
+
+    </script>
+    
+</body>
+</html>

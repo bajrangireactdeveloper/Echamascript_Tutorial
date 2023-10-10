@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promisses</title>
+</head>
+<body>
+    
+
+    <script>
+
+        let a = undefined;
+       
+
+        let Promisses = new Promise((resolve, reject)=>{
+            setTimeout(()=>{
+            a="heloo"
+            resolve("Done");
+            
+        },3000)
+        })
+        Promisses.then(()=>{
+            alert(a);
+        })
+
+        
+        
+    </script>
+</body>
+</html>
